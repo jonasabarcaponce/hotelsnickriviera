@@ -30,34 +30,52 @@ const FormatoContacto = () => {
     }, []);
 
     return (
-        <div className="bg-white text-black py-20" id="cotizar">
-            <div className="flex items-center max-w-[986px] mx-auto px-5 font-bold">
-                <div>
+        <div className="px-5 py-20 bg-gray-100" id="reservar">
+            <div className="mx-auto px-5 items-center max-w-[600px]">
+                <div className="text-center">
                     {isSubmitted ? (
                         <>
-                            <h1 className='mb-3 big-responsive-text text-orange-500'>¡Gracias por contactarnos!</h1>
-                            <p className='medium-responsive-text'>Nos pondremos en contacto contigo pronto.</p>
+                            <h1 className="text-2xl md:text-3xl font-bold">
+                                ¡Gracias!
+                            </h1>
+                            <p className="text-lg mt-5">
+                                En unos momentos nos pondremos en contacto contigo.
+                            </p>
                         </>
                     ) : (
                         <>
-                            <h1 className='mb-3 big-responsive-text text-orange-500'>Tus vacaciones comienzan aquí.</h1>
-                            <p className='medium-responsive-text'>Solicita una llamada y un asesor se pondrá en contacto contigo.</p>
+                            <h1 className="text-2xl md:text-3xl font-bold">
+                                Reservar
+                            </h1>
+                            <p className="text-lg mt-5">
+                                Déjanos tus datos y en una llamada cotizaremos tu estancia en el Hotel para comenzar tu reservación.
+                            </p>
                         </>
                     )}
                 </div>
-            </div>
-            {!isSubmitted && (
-                <div className="max-w-[986px] mx-auto px-5 font-bold small-responsive-text pt-10">
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" name="name" placeholder='Nombre' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' autoComplete="name" required />
-                        <input type="text" name="phone" placeholder='Teléfono' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' autoComplete="tel-national" required />
-                        <input type="email" name="email" placeholder='Correo' className='border-2 rounded-2xl border-black mb-8 d-block w-full md:w-2/3 p-3' autoComplete="email" required />
-                        <button type='submit' className='bg-orange-500 small-responsive-text uppercase py-2 px-10 text-white flex items-center justify-center rounded-2xl'>
-                            Solicitar llamada    
-                        </button>
+                {!isSubmitted && (
+                    <form onSubmit={handleSubmit} className="mt-10 space-y-6">
+                        <div>
+                            <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nombre</label>
+                            <input type="text" id="name" name="name" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm" required autoComplete="name" />
+                        </div>
+                        <div>
+                            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm" pattern="[0-9]{10}" title="Debe ser un número de 10 dígitos" required autoComplete="tel-national" />
+                        </div>
+                        <div>
+                            <label htmlFor="email" className="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-black focus:border-black sm:text-sm" autoComplete="email" />
+                        </div>
+                        <div>
+                            <button type="submit" className="bg-nickelodeonOrange text-white font-bold text-xs md:text-base px-4 md:px-8 py-2 rounded transition-opacity hover:opacity-80">
+                                Agendar recorrido
+                            </button>
+                        </div>
                     </form>
-                </div>
-            )}
+                )} 
+
+            </div>
         </div>
     );
 };

@@ -2,26 +2,36 @@ import logoImage from '../assets/logo.png';
 
 const PiePagina = () => {
     return (
-        <div className="bg-white text-black">
-            <a href="#" className="bg-orange-500 text-2xl text-white flex items-center justify-center rounded-full min-w-12 w-12 h-12 bottom-right fixed bottom-10 right-10">
-                <i className="fab fa-whatsapp"></i>
-            </a>
-            <div className="max-w-[986px] mx-auto py-10 px-5">
-                <nav className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="mb-4 md:mb-0">
-                        <img src={logoImage} className='w-6/12 md:w-8/12 m-auto md:m-0 pb-5 md:pb-0' alt="Logo" />
+        <footer className="bg-white text-black px-5 py-20">
+            <div className="mx-auto px-5 items-center max-w-[1200px]">
+                <div className="text-left mb-8">
+                    <a href="/" title="Hotel Nick Riviera Maya">
+                        <img src={logoImage} className="w-6/12 md:w-3/12" alt="Logo" />
+                    </a>
+                </div>
+                <div className="space-y-4">
+                    <div>
+                        <h3 className="text-xl font-bold">Contacto</h3>
+                        <p className="mt-1">Teléfono: <a href="tel:+529843200042">+52 984 320 0042</a></p>
+                        <p>Email: <a href="mailto:reservations@hotelsnickriviera.com">reservations@hotelsnickriviera.com</a></p>
                     </div>
-                    <div className='text-right'>
-                        <a href="mailto:hola@hola.com" className='small-responsive-text'>
-                            <span className='text-orange-500 font-bold fas fa-envelope mr-2'></span> 
-                            hola@hola.com</a> <br></br>
-                        <a href='tel:' className='small-responsive-text'>
-                            <span className='text-orange-500 font-bold fas fa-phone mr-1'></span> 
-                            +52 (000) 000 00 00</a>
+                    <div>
+                        <h3 className="text-xl font-bold">Dirección</h3>
+                        <p className="mt-1">Carretera Cancún - Tulum Km. 45 77710, Solidaridad, Q.R., México</p>
                     </div>
-                </nav>
+                    <div>
+                        <h3 className="text-xl font-bold">Horario</h3>
+                        <p className="mt-1">Departamento de reservaciones:</p>
+                        <p>Abierto 24 horas, los 365 días del año.</p>
+                    </div>
+                    <div className="fixed bottom-10 right-10 z-50">
+                        <a href="https://wa.me/5219843200042" className="bg-green-600 text-white px-8 py-2 font-bold rounded-2xl transition-opacity hover:opacity-80 flex items-center">
+                            <i className="fab fa-whatsapp mr-1"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
+        </footer>
     );
 };
 
