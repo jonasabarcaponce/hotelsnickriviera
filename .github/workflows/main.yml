@@ -22,8 +22,8 @@ jobs:
     - name: 📂 Sincronizando archivos 
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
-        server: ftp.hotelnickriviera.com
+        server: ftp.hotelsnickriviera.com
         server-dir: public_html/  # Remote directory on the FTP server
         local-dir: dist/           # Sync only the 'dist' folder
-        username: hotelni2
+        username: hotelsni
         password: ${{ secrets.ftp_password }}
