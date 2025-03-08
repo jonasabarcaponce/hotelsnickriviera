@@ -41,7 +41,7 @@ const Cabecera = () => {
                     <a href="#habitaciones" className="block">Habitaciones</a>
                     <a href="#preguntas" className="block">Preguntas</a>
                     <a href="#reservar" className="block">Reservar</a>
-                    <a href="tel:+529843200042" className="block bg-nickelodeonOrange text-white px-8 py-2 rounded transition-opacity hover:opacity-80">Llamar</a>
+                    <a href="tel:+529842361028" className="block bg-nickelodeonOrange text-white px-8 py-2 rounded transition-opacity hover:opacity-80">Llamar</a>
                  </nav>
             </div>
         </header>

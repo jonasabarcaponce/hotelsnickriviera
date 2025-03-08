@@ -12,8 +12,8 @@ const PiePagina = () => {
                 <div className="space-y-4">
                     <div>
                         <h3 className="text-xl font-bold">Contacto</h3>
-                        <p className="mt-1">Teléfono: <a href="tel:+529843200042">+52 984 320 0042</a></p>
-                        <p>Email: <a href="mailto:reservations@hotelsnickriviera.com">reservations@hotelsnickriviera.com</a></p>
+                        <p className="mt-1">Teléfono: <a href="tel:+529842361028">+52 984 236 1028</a></p>
+                        <p>Email: <a href="mailto:reservations@nickelodeonhotelriviera.com">reservations@nickelodeonhotelriviera.com</a></p>
                     </div>
                     <div>
                         <h3 className="text-xl font-bold">Dirección</h3>
@@ -25,7 +25,7 @@ const PiePagina = () => {
                         <p>Abierto 24 horas, los 365 días del año.</p>
                     </div>
                     <div className="fixed bottom-10 right-10 z-50">
-                        <a href="https://wa.me/5219843200042" className="bg-green-600 text-white px-8 py-2 font-bold rounded-2xl transition-opacity hover:opacity-80 flex items-center">
+                        <a href="https://wa.me/5219842361028" className="bg-green-600 text-white px-8 py-2 font-bold rounded-2xl transition-opacity hover:opacity-80 flex items-center">
                             <i className="fab fa-whatsapp mr-1"></i> WhatsApp
                         </a>
                     </div>
