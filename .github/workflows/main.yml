@@ -23,7 +23,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@4.3.3
       with:
         server: ftp.hotelsnickriviera.com
-        server-dir: public_html/  # Remote directory on the FTP server
+        server-dir: public_html/nickelodeonhotelriviera/  # Remote directory on the FTP server
         local-dir: dist/           # Sync only the 'dist' folder
         username: hotelsni
         password: ${{ secrets.ftp_password }}
